@@ -1,6 +1,10 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
+=======
+import 'package:unity_flutter_test/unityPage.dart';
+>>>>>>> 6225886 (running)
 
 void main() {
   runApp(MyApp());
@@ -50,6 +54,13 @@ class _MyHomePageState extends State<MyHomePage> {
             TextButton(
               onPressed: () {
                 log("Opening unity");
+<<<<<<< HEAD
+=======
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => UnityDemoScreen()),
+                );
+>>>>>>> 6225886 (running)
               },
               child: Text('Open Unity'),
               style: TextButton.styleFrom(

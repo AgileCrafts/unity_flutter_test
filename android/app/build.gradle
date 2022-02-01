@@ -27,7 +27,11 @@ apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
 android {
     compileSdkVersion 30
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 6225886 (running)
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
     }
@@ -35,7 +39,11 @@ android {
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId "com.example.unity_flutter_test"
+<<<<<<< HEAD
         minSdkVersion 16
+=======
+        minSdkVersion 21
+>>>>>>> 6225886 (running)
         targetSdkVersion 30
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
@@ -54,6 +62,13 @@ flutter {
     source '../..'
 }
 
+<<<<<<< HEAD
 dependencies {
+=======
+
+dependencies {
+    implementation project(':unityLibrary')
+
+>>>>>>> 6225886 (running)
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }

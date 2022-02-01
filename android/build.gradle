@@ -11,8 +11,18 @@ buildscript {
     }
 }
 
+<<<<<<< HEAD
 allprojects {
     repositories {
+=======
+
+allprojects {
+    repositories {
+        flatDir {
+            dirs "${project(':unityLibrary').projectDir}/libs"
+        }
+
+>>>>>>> 6225886 (running)
         google()
         jcenter()
     }
