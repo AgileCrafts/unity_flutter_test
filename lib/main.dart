@@ -1,10 +1,7 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
-<<<<<<< HEAD
-=======
 import 'package:unity_flutter_test/unityPage.dart';
->>>>>>> 6225886 (running)
 
 void main() {
   runApp(MyApp());
@@ -24,7 +21,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+  MyHomePage({this.title});
 
   final String title;
 
@@ -54,13 +51,10 @@ class _MyHomePageState extends State<MyHomePage> {
             TextButton(
               onPressed: () {
                 log("Opening unity");
-<<<<<<< HEAD
-=======
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => UnityDemoScreen()),
                 );
->>>>>>> 6225886 (running)
               },
               child: Text('Open Unity'),
               style: TextButton.styleFrom(

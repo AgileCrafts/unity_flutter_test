@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_unity_widget/flutter_unity_widget.dart';
 
 class UnityDemoScreen extends StatefulWidget {
-  UnityDemoScreen({Key key}) : super(key: key);
-
   @override
   _UnityDemoScreenState createState() => _UnityDemoScreenState();
 }
@@ -18,15 +16,10 @@ class _UnityDemoScreenState extends State<UnityDemoScreen> {
       key: _scaffoldKey,
       body: SafeArea(
         bottom: false,
-        child: WillPopScope(
-          onWillPop: () {
-            Navigator.pop(context);
-          },
-          child: Container(
-            color: Colors.greenAccent,
-            child: UnityWidget(
-              onUnityCreated: onUnityCreated,
-            ),
+        child: Container(
+          color: Colors.greenAccent,
+          child: UnityWidget(
+            onUnityCreated: onUnityCreated,
           ),
         ),
       ),
